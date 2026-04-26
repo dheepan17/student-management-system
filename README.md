@@ -1,31 +1,19 @@
 # Student Management System
 
-A web-based student management system developed using Python Flask and SQL Server.
+A web application built using Python Flask and SQL Server.
 
 ## Features
-- Admin Login
-- Add Student
-- View Students
-- Search Student
-- Delete Student
-- Dashboard
+- Login system
+- Add student
+- Search student
+- Delete student
+- SQL Server database integration
 
-## Technologies Used
+## Tech Stack
 - Python
 - Flask
 - SQL Server
-- HTML
-- CSS
+- HTML/CSS
 
-## Database
-Database managed using SQL Server Management Studio (SSMS)
-
-## How to Run
-1. Install dependencies
-pip install -r requirements.txt
-
-2. Run application
-python app.py
-
-3. Open browser
-http://127.0.0.1:5000
+## Author
+Dheepan Raj
