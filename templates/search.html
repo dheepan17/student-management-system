@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Search Result</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#f2f2f2;
+}
+
+.container{
+    width:600px;
+    margin:auto;
+    margin-top:50px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:8px;
+    text-align:center;
+}
+
+button{
+    padding:8px 15px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Search Result</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Course</th>
+<th>Marks</th>
+</tr>
+
+{% for s in students %}
+
+<tr>
+<td>{{s.id}}</td>
+<td>{{s.name}}</td>
+<td>{{s.course}}</td>
+<td>{{s.marks}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/dashboard">
+<button>Back to Dashboard</button>
+</a>
+
+</div>
+
+</body>
+</html>
