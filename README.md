@@ -28,5 +28,16 @@ Database managed using SQL Server Management Studio (SSMS)
 4. Run:
    python app.py
 
+## 📸 Application Screenshots
+
+### Login Page
+![Login Page](LOGIN.png)
+
+### Dashboard
+![Dashboard](DASHBOARD.png)
+
+### Database (SQL Server)
+![Database](DATABASE.png)
+
 ## 📌 Author
 Dheepan Raj
