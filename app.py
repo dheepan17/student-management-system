@@ -61,9 +61,7 @@ def add_student():
     marks = request.form['marks']
 
     cursor.execute(
-        "INSERT INTO students (name,course,marks) VALUES (?,?,?)",
-        (name, course, marks)
-    )
+        "INSERT INTO students (name,course,marks) VALUES (?,?,?)",(name, course, marks))
 
     conn.commit()
 
@@ -80,12 +78,11 @@ def search():
 
     cursor.execute(
         "SELECT * FROM students WHERE name LIKE ?",
-        ('%' + name + '%',)
-    )
+        ('%' + name + '%',))
 
     students = cursor.fetchall()
 
-    return render_template("search.html", students=students)
+     return  render_template("search.html", students=students)
 
 
 # -----------------------
@@ -96,8 +93,7 @@ def delete_student(id):
 
     cursor.execute(
         "DELETE FROM students WHERE id=?",
-        (id,)
-    )
+        (id,) )
 
     conn.commit()
 
